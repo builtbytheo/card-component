@@ -15,36 +15,33 @@
       href="./css/styles.css" />
   </head>
   <body>
-    <!--
-      component could very well be a <main> but React mindset and keeping reusability in mind
-      i decided to stick with the <article> element since this component could be repurposed in
-      various different ways
-    -->
-    <article class="card">
-      <img
-        src="./assets/images/illustration-article.svg"
-        alt="Article preview image."
-        class="card__image" />
-      <div class="card__details-container">
-        <span class="card__category">Learning</span>
-        <time
-          datetime="2023-12-21"
-          class="card__date"
-          >Published 21 Dec 2023</time
-        >
-        <h2 class="card__title">HTML & CSS Foundations</h2>
-        <p class="card__description">
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
-        </p>
-        <div class="card__author-container">
-          <img
-            src="./assets/images/image-avatar.webp"
-            alt="Author avatar."
-            class="card__author-image" />
-          <p class="card__author-name">Greg Hooper</p>
+    <main>
+      <article class="card">
+        <img
+          src="./assets/images/illustration-article.svg"
+          alt="Article preview image."
+          class="card__image" />
+        <div class="card__details-container">
+          <span class="card__category">Learning</span>
+          <time
+            datetime="2023-12-21"
+            class="card__date"
+            >Published 21 Dec 2023</time
+          >
+          <h2 class="card__title">HTML & CSS foundations</h2>
+          <p class="card__description">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+          <div class="card__author-container">
+            <img
+              src="./assets/images/image-avatar.webp"
+              alt="Author avatar."
+              class="card__author-image" />
+            <p class="card__author-name">Greg Hooper</p>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </main>
   </body>
 </html>
