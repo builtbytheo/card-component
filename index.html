@@ -15,6 +15,11 @@
       href="./css/styles.css" />
   </head>
   <body>
+    <!--
+      component could very well be a <main> but React mindset and keeping reusability in mind
+      i decided to stick with the <article> element since this component could be repurposed in
+      various different ways
+    -->
     <article class="card">
       <img
         src="./assets/images/illustration-article.svg"
@@ -27,6 +32,11 @@
           class="card__date"
           >Published 21 Dec 2023</time
         >
+        <!--
+          the title could very well be an <h1> but i was thinking more in a reusable React mind
+          meaning if more instances of this component were to exist there would be way too many
+          <h1> elements on the page - same goes for all other headings - so <span> made most sense
+        -->
         <span class="card__title">HTML & CSS Foundations</span>
         <p class="card__description">
           These languages are the backbone of every website, defining structure,
@@ -37,7 +47,7 @@
             src="./assets/images/image-avatar.webp"
             alt="Author avatar."
             class="card__author-image" />
-          <span class="card__author-name">Greg Hooper</span>
+          <p class="card__author-name">Greg Hooper</p>
         </div>
       </div>
     </article>
