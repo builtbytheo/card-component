@@ -23,10 +23,12 @@ local fonts
 project variables
 ===============*/
 :root {
-  --darkGray: #111;
+  --fnt-bold: 800;
   --fnt-large: 1.5rem;
+  --fnt-mobile: 0.75rem;
   --fnt-regular: 1rem;
   --fnt-small: 0.875rem;
+  --darkGray: #111;
   --gray: #6b6b6b;
   --white: #fff;
   --yellow: #f4d04e;
@@ -37,8 +39,104 @@ general styling
 =============*/
 html {
   font-family: 'Figtree', sans-serif;
+  line-height: 1.5;
 }
 
 body {
   background: var(--yellow);
+  color: var(--darkGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  padding: 1.5rem;
+}
+
+/*============
+card component
+============*/
+.card {
+  background: var(--white);
+  border-radius: 20px;
+  border: 1px solid var(--darkGray);
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  width: 100%;
+  max-width: 24rem;
+  padding: 1.5rem;
+}
+
+.card__image {
+  border-radius: 10px;
+}
+
+.card__details-container,
+.card__author-container {
+  margin-top: 1.5rem;
+}
+
+.card__category,
+.card__date,
+.card__title {
+  margin-bottom: 0.75rem;
+}
+
+.card__category {
+  background: var(--yellow);
+  border-radius: 4px;
+  display: inline-block;
+  font-size: var(--fnt-mobile);
+  font-weight: var(--fnt-bold);
+  padding: 0.25rem 0.75rem;
+}
+
+.card__date {
+  display: block;
+  font-size: var(--fnt-mobile);
+}
+
+.card__title {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: var(--fnt-bold);
+  transition: color 0.2s;
+}
+
+.card__title:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.card__description {
+  color: var(--gray);
+  font-size: var(--fnt-small);
+}
+
+.card__author-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.card__author-image {
+  width: 2rem;
+}
+
+.card__author-name {
+  font-size: var(--fnt-small);
+  font-weight: var(--fnt-bold);
+}
+
+@media (min-width: 48rem) {
+  .card__category,
+  .card__date {
+    font-size: var(--fnt-small);
+  }
+
+  .card__title {
+    font-size: var(--fnt-large);
+  }
+
+  .card__description {
+    font-size: var(--fnt-regular);
+  }
 }

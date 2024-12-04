@@ -12,6 +12,11 @@ custom additions
   padding: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 /*
 Document
 ========
