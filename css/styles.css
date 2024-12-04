@@ -1,0 +1,44 @@
+/*=========
+local fonts
+=========*/
+@font-face {
+  font-display: swap;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/figtree-v6-latin-500.woff2') format('woff2'),
+    url('../assets/fonts/figtree-v6-latin-500.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../assets/fonts/figtree-v6-latin-800.woff2') format('woff2'),
+    url('../assets/fonts/figtree-v6-latin-800.ttf') format('truetype');
+}
+
+/*===============
+project variables
+===============*/
+:root {
+  --darkGray: #111;
+  --fnt-large: 1.5rem;
+  --fnt-regular: 1rem;
+  --fnt-small: 0.875rem;
+  --gray: #6b6b6b;
+  --white: #fff;
+  --yellow: #f4d04e;
+}
+
+/*=============
+general styling
+=============*/
+html {
+  font-family: 'Figtree', sans-serif;
+}
+
+body {
+  background: var(--yellow);
+}
